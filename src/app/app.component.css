@@ -1,0 +1,14 @@
+#wrapper {
+    padding-left: 0;
+}
+
+.huge {
+    font-size: 50px;
+    line-height: normal;
+}
+
+@media(min-width:768px) {
+    #wrapper {
+        padding-left: 225px;
+    }
+}
