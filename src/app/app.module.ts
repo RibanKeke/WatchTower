@@ -7,12 +7,14 @@ import { AlertModule } from 'ng2-bootstrap';
 import { AppComponent } from './app.component';
 import { NavigationComponent } from './navigation/navigation.component';
 import { ContentComponent } from './content/content.component';
+import { ServiceCardComponent } from './service-card/service-card.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     NavigationComponent,
-    ContentComponent
+    ContentComponent,
+    ServiceCardComponent
   ],
   imports: [
     BrowserModule,

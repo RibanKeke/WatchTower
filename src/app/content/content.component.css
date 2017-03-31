@@ -1,11 +1,11 @@
-#page-wrapper {
-    width: 100%;
-    padding: 0;
-    background-color: #fff;
+/* Set gray background color and 100% height */
+
+.sidenav {
+    padding-top: 20px;
+    background-color: #f1f1f1;
+    height: 100%;
 }
 
-@media(min-width:768px) {
-    #page-wrapper {
-        padding: 10px;
-    }
+.service-cards {
+    margin: 10px;
 }
