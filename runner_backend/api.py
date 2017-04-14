@@ -5,9 +5,11 @@ Description: Flash server for running system command and following execution.
 """
 from flask import Flask
 from flask_restful import Api
-from controllers import helloController
 from flask_sqlalchemy import SQLAlchemy
-from flask_socketio import SocketIO, emit
+from flask_socketio import SocketIO
+
+from controllers import helloController
+from socket_controllers.socket_services import ServiceNamespace
 
 APP = Flask(__name__)
 
@@ -19,6 +21,8 @@ APP.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = True
 
 
 DB = SQLAlchemy(APP)
+
+SOCKETIO.on_namespace(ServiceNamespace('sk_service'))
 
 API.add_resource(helloController.HelloController, '/api/hello')
 

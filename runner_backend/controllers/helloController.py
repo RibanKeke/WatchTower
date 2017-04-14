@@ -1,3 +1,6 @@
+"""
+Author: Robert Banziziki
+"""
 from flask_restful import Resource
 
 class HelloController(Resource):
