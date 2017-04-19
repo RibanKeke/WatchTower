@@ -7,14 +7,18 @@ import { AppComponent } from './app.component';
 import { NavigationComponent } from './navigation/navigation.component';
 import { ContentComponent } from './content/content.component';
 import { ServiceCardComponent } from './service-card/service-card.component';
-import { MaterializeModule } from "ng2-materialize"
+import { MaterializeModule } from "ng2-materialize";
+import { ServiceLiveComponent } from './service-live/service-live.component';
+import { ServiceDashboardComponent } from './service-dashboard/service-dashboard.component'
 
 @NgModule({
   declarations: [
     AppComponent,
     NavigationComponent,
     ContentComponent,
-    ServiceCardComponent
+    ServiceCardComponent,
+    ServiceLiveComponent,
+    ServiceDashboardComponent
   ],
   imports: [
     BrowserModule,
