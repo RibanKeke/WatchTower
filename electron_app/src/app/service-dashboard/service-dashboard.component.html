@@ -1,4 +1,6 @@
 <div>
-  <app-service-card></app-service-card>
+  <div *ngFor="let backend_service of backend_services">
+    <app-service-card bind-backend_service="backend_service"></app-service-card>
+  </div>
   <app-service-live></app-service-live>
 </div>
