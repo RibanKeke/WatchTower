@@ -9,9 +9,13 @@ import { BackendService} from '../backend-service'
 export class ServiceCardComponent implements OnInit {
 
   @Input() backend_service: BackendService;
+  expanded:string;
   constructor() { }
 
   ngOnInit() {
   }
-
+  
+  expand(){
+    this.expanded = "I'am expanded bitches"
+  }
 }

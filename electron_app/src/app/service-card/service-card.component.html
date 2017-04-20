@@ -7,11 +7,12 @@
                     {{backend_service.description}}
                 </p>
             </div>
+            <div>{{expanded}}</div>
             <div class="card-action">
                 <a href="#">Start</a>
                 <a href="#">Stop</a>
                 <a href='#'>Restart</a>
-                <a href="#" class="right">Expand</a>
+                <a href="#" class="right" (click)="expand()">Expand</a>
             </div>
         </div>
 </div>
