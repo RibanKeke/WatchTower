@@ -1,0 +1,9 @@
+.example-card {
+  width: 400px;
+  margin: 10px;
+}
+
+.example-header-image {
+  background-color: beige;
+  background-size: cover;
+}

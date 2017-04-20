@@ -1,27 +1,20 @@
 <div>
-<div class="row">
+  <div>
 
-  <div class="col s6">
-    <a class="waves-effect waves-light btn">Profile</a>
-    
-    <!-- Dropdown Trigger -->
-    <a class='dropdown-button btn' href='#' data-activates='dropdown1'>Drop Me!</a>
-    
-    <!-- Dropdown Structure -->
-    <ul id='dropdown1' class='dropdown-content'>
-      <li><a href="#!">one</a></li>
-      <li><a href="#!">two</a></li>
-      <li class="divider"></li>
-      <li><a href="#!">three</a></li>
-    </ul>
-    
-    <a class="waves-effect waves-light btn">Start all</a>
-    <a class="waves-effect waves-light btn">Edit Profile</a>
-  </div>
+    <div>
+      <md-toolbar>
+        <button md-button (click)="onClick" style="background:lightskyblue">Select Profile</button>
+        <span style="margin: 2px"></span>
+        <button md-button (click)="onClick" style="background:lightskyblue; color:black">Start All</button>
+        <!-- This fills the remaining space of the current row -->
+        <span style="margin: 2px"></span>
+        <button md-button (click)="onClick" style="background:lightskyblue; color:black">Edit Profile</button>
+      </md-toolbar>
+    </div>
 
-  <div class="col s12">
-    <!-- Teal page content  -->
-    <app-service-dashboard bind-backend_services="backend_services"></app-service-dashboard>
+    <div class="col s12">
+      <!-- Teal page content  -->
+      <app-service-dashboard bind-backend_services="backend_services"></app-service-dashboard>
+    </div>
   </div>
-</div>
-<div>
+  <div>
