@@ -1,0 +1,5 @@
+include CHANGELOG.txt LICENSE.txt README.rst sample_settings.py sample_pasteconfig.ini setup.cfg
+recursive-include watchtower/templates *.html
+recursive-include watchtower/static *
+prune watchtower/static/.webassets-cache
+global-exclude .gitkeep

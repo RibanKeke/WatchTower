@@ -1,0 +1,7 @@
+{
+  "name": "watchtower",
+  "dependencies": {
+    "bootstrap": "~3.3.4",
+    "jQuery": "~2.1.3"
+  }
+}
